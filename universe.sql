@@ -87,7 +87,7 @@ ALTER SEQUENCE public.galaxy_galaxy_id_seq OWNED BY public.galaxy.galaxy_id;
 
 CREATE TABLE public.galaxy_types (
     galaxy_types_id integer NOT NULL,
-    name character varying(20),
+    name character varying(20) NOT NULL,
     description text
 );
 
@@ -203,7 +203,7 @@ ALTER SEQUENCE public.planet_planet_id_seq OWNED BY public.planet.planet_id;
 
 CREATE TABLE public.planet_types (
     planet_types_id integer NOT NULL,
-    name character varying(20),
+    name character varying(20) NOT NULL,
     description text
 );
 
